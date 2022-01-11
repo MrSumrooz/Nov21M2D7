@@ -37,20 +37,38 @@
             color: chartreuse !important;
         }
 
-        /* EX4) Write a selector to target the first blogpost */
+        /*         EX4) Write a selector to target the first blogpost            */
+
+        main > div > div > div:nth-child(2){
+            background-color: cyan;
+        }
 
 
+        /*  EX6) Write a selector to target the last blog post */
+        main > div > div > div:last-of-type{
+
+            background-color: darkmagenta;
+        }         
+        
+        /*   EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
+
+        .blog-sidebar > div:nth-child(2) > ol li{
+            background-color: darkred;
+        }
+
+        /* EX8) Write a selector to target the second post author  */
 
 
-         /*     
+        .blog-post .blog-post-meta > a{
 
+            color: green;
+        }
+
+        /*     
+            
+           
             
             
-            
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
             EX10) Write a selector to target the footer
         */
